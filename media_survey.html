@@ -1,39 +1,60 @@
 <!DOCTYPE html>
-<h1 id="title">Tell us your favorite way to enjoy content!</h1>
+<h1 id="title">Tell us your favorite metal subgenre!</h1>
+
 <link rel="stylesheet" href="styles.css">
 <body>
-<p id="description">Enter a few details and our webpage will generate some recommendations for you</p> 
+<p id="description">Use this form to tell us your favorite metal subgenres and bands</p> 
+
 <form id="survey-form">
-  <input required type="text" id="name"></input>
-  <label id="name-label">Name</label><br>
-  <div></div>
-  <input id="email" type="email" required></input>
-  <label id="email-label">Email</label><br>
-  <input id="number" type="number" min="7" max="10"></input>
-  <label id="number-label">Phone Number</label>
-  <div></div>
+  <input required type="text" id="name" placeholder="ex. John Doe"></input>
+  <br>
+  <label id="name-label">Enter your name</label>
+  <br>
+  <input id="email" type="email" required placeholder="ex. jane1234@email.com"></input>
+  <br>
+  <label id="email-label">Enter your email</label>
+  <br>
+  <input id="number" type="number" min="7" max="100000000000000000" placeholder="ex.555-111-1234"></input>
+  <br>
+  <label id="number-label">Enter your phone number</label>
+  <br>
+  
   <select class="dropdown" id="dropdown">
-    <option value="Choose a media form"> Choose a media form</option>
-    <option value="Books">Books</option>
-    <option value="Movies">Movies</option>
-    <option value="Podcasts">Podcasts</options>
+    <option value="Choose a decade"> Choose a decade</option>
+    <option value="1970's">1970's</option>
+    <option value="1980's">1980's</option>
+    <option value="1990's">1990's</options>
+    <option value="2000's">2000's</options>
+    <option value="2010's">2010's</options>
+    <option value="2020's">2020's</options>
   </select>
+
   <div></div> 
-  <input type="radio"></input> 
-  <label for="Horror">Horror</label>
+
+  <p>What is your favorite subgenre?</p>
+  <input type="radio" id="Death" name="genre" value="death"></input>
+  <label for="Death">Death Metal</label>
   <br>
-  <input type="radio" id="Biography" name="genre" value="Biography">
-  <label for="biography">Biography</label><br>
-  <input type="radio" id="Romance" name="genre" value="Romance">
-  <label for="Romance">Romance</label>
+  <input type="radio" id="Thrash" name="genre" value="thrash">
+  <label for="Thrash">Thrash Metal</label><br>
+  <input type="radio" id="Doom" name="genre" value="doom">
+  <label for="Doom">Doom Metal</label>
   <br>
-  <input type="radio" id="Fantasy" name="genre" value="Fantasy">
-  <label for="Fantasy"> Fantasy</label>
-  <br>
+  <input type="radio" id="Black" name="genre" value="black">
+  <label for="Black"> Black Metal</label>
+
+  <div></div>
+  <p>Did we miss your favorite genre? Type it in the box below!</p>
   <textarea></textarea>
   <br>
   <button id="submit">Submit</button>
-
+<br>
+<br>
+<p>Do you want to receive emails from us with the lates metal updates?</p>
+<input type="checkbox" value="Yes">Yes</
+input>
+<br>
+<input type="checkbox" value="No">No</input>
   </form>
 </body>
 </html>
