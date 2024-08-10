@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<h1 id="title">Tell us your favorite way to enjoy content!</h1>
+<link rel="stylesheet" href="styles.css">
+<body>
+<p id="description">Enter a few details and our webpage will generate some recommendations for you</p> 
+<form id="survey-form">
+  <input required type="text" id="name"></input>
+  <label id="name-label">Name</label><br>
+  <div></div>
+  <input id="email" type="email" required></input>
+  <label id="email-label">Email</label><br>
+  <input id="number" type="number" min="7" max="10"></input>
+  <label id="number-label">Phone Number</label>
+  <div></div>
+  <select class="dropdown" id="dropdown">
+    <option value="Choose a media form"> Choose a media form</option>
+    <option value="Books">Books</option>
+    <option value="Movies">Movies</option>
+    <option value="Podcasts">Podcasts</options>
+  </select>
+  <div></div> 
+  <input type="radio"></input> 
+  <label for="Horror">Horror</label>
+  <br>
+  <input type="radio" id="Biography" name="genre" value="Biography">
+  <label for="biography">Biography</label><br>
+  <input type="radio" id="Romance" name="genre" value="Romance">
+  <label for="Romance">Romance</label>
+  <br>
+  <input type="radio" id="Fantasy" name="genre" value="Fantasy">
+  <label for="Fantasy"> Fantasy</label>
+  <br>
+  <textarea></textarea>
+  <br>
+  <button id="submit">Submit</button>
+
+  </form>
+</body>
+</html>
